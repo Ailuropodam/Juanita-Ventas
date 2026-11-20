@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juanita's ventas</title>
+    <link rel="icon" href="/front/dist/assets/images/girl.png" type="image/png">
+    <link rel="stylesheet" href="/front/dist/css/admin.css">
+    <script src="/front/dist/js/api.js" defer></script>
+    <script src="/front/dist/js/pages/call-product.js" defer></script>
+    <script src="/front/dist/js/pages/products.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <img class="logo" src="/front/dist/assets/images/girl.png" alt="Juanita's">
+            <a class="logo-text">Juanita's</a>
+            <a class="btn-home" href="/">Volver a inicio</a>
+        </div>
+    </header>
+
+    <main class="admin-main">
+
+        <div class="admin-top">
+            <h1 class="admin-title">Administrar productos</h1>
+            <a href="/product/register" class="btn-add">Agregar productos</a>
+        </div>
+
+        <div class="table-wrap">
+            <table class="products-table">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>ID</th>
+                        <th>Stock</th>
+                        <th>Precio</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="products-body"></tbody>
+            </table>
+        </div>
+
+        <div class="table-footer">
+            <p class="table-info" id="table-info"></p>
+            <nav class="pagination" id="pagination" aria-label="Paginación"></nav>
+        </div>
+
+    </main>
+</body>
+</html>

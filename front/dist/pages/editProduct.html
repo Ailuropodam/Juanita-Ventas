@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juanita's ventas</title>
+    <link rel="icon" href="/front/dist/assets/images/girl.png" type="image/png">
+    <link rel="stylesheet" href="/front/dist/css/admin.css">
+    <script src="/front/dist/js/api.js" defer></script>
+    <script src="/front/dist/js/pages/call-product.js" defer></script>
+    <script src="/front/dist/js/pages/products.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <img class="logo" src="/front/dist/assets/images/girl.png" alt="Juanita's">
+            <a class="logo-text">Juanita's</a>
+            <a class="btn-home" href="/product/list">Volver a productos</a>
+        </div>
+    </header>
+
+    <main class="admin-main">
+        <form class="form-card" id="product-form">
+            <h1 class="form-title">Editar producto</h1>
+
+            <div class="form-group">
+                <label for="id">ID</label>
+                <input id="id" name="id" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="name">Producto</label>
+                <input id="name" name="name" type="text" required>
+            </div>
+
+            <div class="form-group">
+                <label for="stock">Stock</label>
+                <input id="stock" name="stock" type="number" min="0" step="1" required>
+            </div>
+
+            <div class="form-group">
+                <label for="price">Precio</label>
+                <input id="price" name="price" type="number" min="0" step="0.01" required>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn-primary">Guardar cambios</button>
+                <a href="/product/list" class="btn-secondary">Cancelar</a>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
