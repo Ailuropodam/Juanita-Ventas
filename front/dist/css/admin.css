@@ -161,6 +161,12 @@ body {
   transition: background .15s;
 }
 
+.btn-fix {
+  width: 100% !important;
+  margin: 5% !important;
+  text-align: center !important;
+}
+
 .btn-edit:hover { background: #6a6a6a; }
 
 /* ===== Pie de tabla / paginación ===== */

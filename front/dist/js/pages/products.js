@@ -60,7 +60,7 @@
             actionsCell.className = "cell-action";
 
             const editLink = document.createElement("a");
-            editLink.className = "btn-edit";
+            editLink.className = "btn-edit btn-fix";
             editLink.href = `/product/edit?id=${encodeURIComponent(product.id)}`;
             editLink.textContent = "Editar";
 
@@ -69,7 +69,7 @@
             // por fila.
             const deleteButton = document.createElement("button");
             deleteButton.type = "button";
-            deleteButton.className = "btn-secondary";
+            deleteButton.className = "btn-secondary btn-fix";
             deleteButton.dataset.deleteProduct = product.id;
             deleteButton.textContent = "Eliminar";
 
